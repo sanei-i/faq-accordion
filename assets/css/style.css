@@ -1,5 +1,4 @@
 /* 
-footer
 Variables
 */
 :root {
@@ -21,6 +20,102 @@ Variables
     --space-md: 1.5rem;
     --space-lg: 2rem;
 }
+
+
+/* 
+Base styles
+*/
+@font-face {
+    font-family: "WorkSans";
+    src: url(../fonts/WorkSans-VariableFont_wght.ttf);
+}
+main {
+    padding-block: var(--space-lg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("../images/background-pattern-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+body {
+    font-family: "WorkSans", "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans", Meiryo, sans-serif;
+    font-size: var(--text-100);
+    background-color: var(--color-neutral-100);
+}
+p {
+    margin: 0;
+}
+button {
+    padding: 0;
+    background-color: var(--color-neutral-000);
+    border: none;
+}
+
+
+/* 
+card
+*/
+.card {
+    width: 20.4375rem;
+    padding: var(--space-md);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+    background-color: var(--color-neutral-000);
+    border-radius: var(--radius-000);
+    color: var(--color-neutral-900);
+    box-shadow: 0 30px 40px rgba(0, 0, 0, 0.1);
+}
+.title {
+    display: flex;
+    gap: var(--space-md);
+}
+.title-image {
+    width: 1.5rem;
+}
+h1 {
+    margin: 0;
+    font-size: var(--text-200);
+    font-weight: 700;
+}
+.faq {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+.faq-item {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+.faq-item + .faq-item {
+    border-block-start: 0.0625rem solid rgba(0, 0, 0, 0.1);
+    padding-block-start: var(--space-md);
+}
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.faq-question-title {
+    text-align: start;
+    font-size: var(--text-100);
+    font-weight: 600;
+}
+/* .faq-question-icon {} */
+.faq-answer {
+    display: none;
+    font-size: var(--text-000);
+    font-weight: 400;
+    color: var(--color-neutral-600);
+}
+
+
+/* 
+Footer
 */
 .attribution {
     font-size: 0.6875rem; text-align: center;
