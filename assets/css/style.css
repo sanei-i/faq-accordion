@@ -117,6 +117,16 @@ h1 {
 
 
 /* 
+hover, focus
+*/
+.faq-question:hover, 
+.faq-question:focus {
+    color: var(--color-neutral-800);
+    cursor: pointer;
+}
+
+
+/* 
 Footer
 */
 .attribution {
